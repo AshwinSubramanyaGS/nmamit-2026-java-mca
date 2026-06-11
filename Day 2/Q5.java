@@ -6,8 +6,8 @@ public class Q5 {
         int n = sc.nextInt();
 
         int num = 1;
-        while (num <= n) {
-            if (num % 3 != 0) {
+        while (num*num <= n) {
+            if (num % 4 != 0) {
                 System.out.print((num * num) + " ");
             }
             num++;

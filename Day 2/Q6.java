@@ -1,3 +1,4 @@
+//1, 4, 7, 12, 23, ... N
 import java.util.*;
 
 public class Q6 {
@@ -5,13 +6,16 @@ public class Q6 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        int num = 1;
-        int increment = 3;
+        int term1 = 1;
+        int term2 = 4;
+        int term3 = 7;
 
-        while (num <= n) {
-            System.out.print(num + " ");
-            num += increment;
-            increment += 3;
+        while (term1 <= n) {
+            System.out.print(term1 + " ");
+            int temp=term1;
+            term1=term2;
+            term2=term3;
+            term3=temp+term1+term2;
         }
         sc.close();
     }

@@ -6,9 +6,11 @@ public class Q9 {
         int n = sc.nextInt();
 
         int value = 2;
-        while (Math.abs(value) <= n) {
-            System.out.print(value + " ");
-            value = value > 0 ? -(value + 2) : -(value - 2);
+        int counter=1;
+        while (value <= n) {
+            System.out.print(counter%2!=0? value :" "+ -value + " ");
+            value+=2;
+            counter++;
         }
         sc.close();
     }
