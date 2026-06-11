@@ -43,14 +43,13 @@ import java.util.Scanner;
 public class HrrJavaStd1 {
 
     public static void main(String[] args) {
-        var sc=new Scanner(System.in);
-        var integerVariable= sc.nextInt();
-        var doubleVariable= sc.nextDouble();
-        sc.next();
-        var stringVariable= sc.nextLine();
+        var sc = new Scanner(System.in);
+        var a = sc.nextInt();
+        var b = sc.nextInt();
+        var c = sc.nextInt();
         sc.close();
-
-        System.out.println("String: "+stringVariable+"\nDouble: "+doubleVariable+"\nInt: "+integerVariable);
+        
+        System.out.println(a +"\n"+b+"\n"+c);
 
     }
     
